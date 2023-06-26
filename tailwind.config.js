@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         "hero-img": "url('/img/winetop.jpg')",
       },
+      fontFamily: {
+        poppins: ["poppins", "Sans-serif"],
+      },
     },
   },
   plugins: [],

@@ -11,32 +11,48 @@
     <title>Business</title>
 </head>
 
-<body>
-    <!-- navbar starts here -->
-    <nav class="flex bg-white px-10 w-full h-24 justify-between items-center fixed">
-        <div class="flex">
-            <img src="/img/Bika Transparent 2.png" alt="">
-        </div>
-
-        <div class="flex">
-            <ul class="flex flex-row space-x-5 text-[18px] font-medium">
-                <li class="text-purple-500"><a href="">Home</a></li>
-                <li class="hover:text-purple-500"><a href="">About</a></li>
-                <li class="hover:text-purple-500"><a href="">Contact</a></li>
-                <li class="bg-purple-500 text-white px-6 py-2 rounded-2xl"><a href="">Get Bika</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- navbar ends here -->
+<body class="font-poppins overflow-x-hidden'">
+    <section>
+        <!-- navbar starts here -->
+        <nav class="border-gray-200 bg-gray-50 sm:px-8 px-4">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center">
+                    <img src="/img/Bika Transparent 2.png" class="" alt="ebika" />
+                </a>
+                <button data-collapse-toggle=" navbar-solid-bg" type="button"
+                    class="hamburger inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-solid-bg" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden menu w-full md:block md:w-auto" id="navbar-solid-bg">
+                    <ul class="sm:flex flex-row space-x-5 text-[15px] font-medium">
+                        <li class="menuItem text-purple-500"><a href="">Home</a></li>
+                        <li class="menuItem hover:text-purple-500"><a href="">About</a></li>
+                        <li class="menuItem hover:text-purple-500"><a href="">Contact</a></li>
+                        <li class="menuItem bg-purple-500 text-white px-5 py-1 rounded-md text-sm"><a href="">Get
+                                Bika</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar ends here -->
+    </section>
 
     <!-- Using background gradient -->
-    <div class="flex bg-gradient-to-b from-purple-700 to-purple-600 w-full h-[115vh]">
+    <div class="sm:flex bg-gradient-to-b from-purple-700 to-purple-600 w-full min-h-[115vh]">
         <!-- main contents starts here -->
-        <div class="w-1/2 flex flex-row justify-between items-center">
-            <div class="w-full flex flex-col px-20">
-                <h2 class="text-4xl text-white">
-                    <span class="font-bold">bikes</span> anywhere <span>close</span> to you, <br>
-                    delivering
+        <div class="w-full sm:flex sm:flex-row flex flex-col justify-between items-center">
+            <div class="sm:w-1/2 flex flex-col mt-7 p-7 sm:px-20 px-5 ">
+                <h2 class="text-4xl text-white w-full">
+                    <span class="font-bold">bikes</span> anywhere <span>close</span> to you,
+                    delivering <span class="text-white font-bold text-4xl" id="textElement"></span>
                 </h2> <br>
                 <p class="text-lg text-white mt-5">
                     Register your bicycle, receive orders and cashout on <br>
@@ -44,7 +60,7 @@
                     meals, foodstuffs, groceries, fruits and drinks to homes <br>
                     close to you.
                 </p>
-                <div class="flex flex-row space-x-5 mt-12">
+                <div class="sm:flex sm:flex-row hidden space-x-5 mt-12">
                     <p class="text-white">
                         Scan here <br>
                         to download <br>
@@ -52,16 +68,25 @@
                     </p>
                     <img src="/img/bika mobile app download QR code 1.png" alt="">
                 </div>
+                <div class="sm:hidden overflow-hidden flex flex-row w-full mt-10 px-6">
+                    <img src="/img/Google Play 1.png" alt="" class="w-1/2">
+                    <img src="/img/APPle.png" alt="" class="w-1/2">
+                </div>
             </div>
-        </div>
-        <div class="flex items-center">
-            <img src="/img/bika pic 2.png" alt="">
+            <div class="flex w-full sm:w-1/2 flex-col px-5">
+                <div>
+                    <img src="/img/bika pic 2.png" class="animate-bounce" alt="" width="100%">
+                </div>
+                <div class=" ml-[55%] mt-10">
+                    <img src="/img/Bika FF transparent 2.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="flex h-screen w-full">
-        <div class="flex-1 bg-hero-img bg-cover bg-center bg-no-repeat px-20">
-            <div class="flex flex-row justify-between mt-11">
+        <div class="flex-1 bg-hero-img bg-fixed sm:bg-cover bg-contain bg-center bg-no-repeat px-20">
+            <!-- <div class="flex flex-row justify-between mt-11">
                 <div class="flex items-center">
                     <p class="text-2xl text-white">
                         I'm a <span class="font-extrabold">bika.</span> <br>
@@ -74,13 +99,13 @@
                     <i
                         class="fa-solid fa-arrow-right text-2xl px-4 py-1 text-white bg-[#9A20D3] cursor-pointer mr-3 rounded-lg"></i>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <div class="flex items-center justify-between bg-purple-300 flex-row w-full h-[110vh] px-20">
         <div class="flex w-[500px]  items-center">
-            <div class="flex items-center w-fit h-[15vh] -mb-32">
+            <div class="flex items-center w-fit h-[15vh] -mb-[30px]">
                 <img class="w-fit h-fit" src="/img/girlbike.png" alt="">
             </div>
         </div>
@@ -90,12 +115,12 @@
                 <h2 class="text-center text-black font-extrabold text-2xl">How it works</h2>
             </div>
 
-            <div class="flex space-y-9 flex-col">
+            <div class="flex space-y-7 flex-col">
                 <div class="flex flex-row space-x-4 mr-16">
                     <div class="flex h-10 w-10 items-center justify-center rounded-full bg-purple-700  text-white">1
                     </div>
-                    <div class="w-[410px] px-5 py-3 rounded-2xl bg-white text-black items-center justify-center ">
-                        <p class="flex text-[16px] items-center justify-center">
+                    <div class="w-[356px] px-6 py-3 rounded-2xl bg-white text-black items-center justify-center ">
+                        <p class="flex text-[12px] items-center justify-center">
                             Download & Install the bika app by FiranseFood
                             your iOS or Android phone. Sign-up to create your
                             bika account and register your bicycle.
@@ -104,8 +129,8 @@
                 </div>
 
                 <div class="flex flex-row space-x-4 mr-16">
-                    <div class="w-[410px] px-5 py-3 rounded-2xl bg-white text-black items-center justify-center">
-                        <p class="flex text-[16px] items-center justify-center">
+                    <div class="w-[354px] px-6 py-3 rounded-2xl bg-white text-black items-center justify-center">
+                        <p class="flex text-[12px] items-center justify-center">
                             Become a bika rider with one tap and proceed to
                             filling your bika payment details. Station your
                             bicycle active for orders and delivery.
@@ -117,33 +142,193 @@
                 </div>
 
                 <div class="flex flex-row space-x-4 mr-16">
-                    <div class="flex h-10 w-10 items-center justify-center rounded-full bg-purple-700  text-white">1
+                    <div class="flex h-10 w-10 items-center justify-center rounded-full bg-purple-700  text-white">3
                     </div>
-                    <div class="w-[410px] px-5 py-3 rounded-2xl bg-white text-black items-center justify-center ">
-                        <p class="flex text-[16px] items-center justify-center">
-                            Download & Install the bika app by FiranseFood
-                            your iOS or Android phone. Sign-up to create your
-                            bika account and register your bicycle.
+                    <div class="w-[360px] px-6 py-3 rounded-2xl bg-white text-black items-center justify-center ">
+                        <p class="w-fit flex text-[12px] items-center justify-center">
+                            Enter your current address/location to get timely
+                            notifications on FiranseFood orders in that
+                            particular location or community at any time.
                         </p>
                     </div>
                 </div>
 
                 <div class="flex flex-row space-x-4 mr-16">
-                    <div class="w-[410px] px-5 py-3 rounded-2xl bg-white text-black items-center justify-center">
-                        <p class="flex text-[16px] items-center justify-center">
-                            Become a bika rider with one tap and proceed to
-                            filling your bika payment details. Station your
-                            bicycle active for orders and delivery.
+                    <div class="w-[354px] px-6 py-3 rounded-2xl bg-white text-black items-center justify-center">
+                        <p class="flex text-[13px] items-center justify-center">
+                            Accept ride orders and fulfil delivery within 30-45
+                            minutes at the convenience of your bicycle. BIke
+                            anywhere close to you, and get paid for delivery.
                         </p>
                     </div>
                     <div class="flex h-10 w-10 items-center justify-center rounded-full bg-purple-700 text-white">
-                        2
+                        4
+                    </div>
+                </div>
+
+                <div class="sm:hidden flex w-[500px]  items-center">
+                    <div class="flex items-center w-fit h-[15vh] -mb-[30px]">
+                        <img class="w-fit h-fit" src="/img/girlbike.png" alt="">
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+
+    <div class="w-full h-[60vh] flex mt-16">
+        <div class="w-full flex flex-row items-center justify-between">
+            <div class="w-[800px] flex px-20">
+                <img class="items-center justify-center w-full" src="/img/Group.png" alt="">
+            </div>
+
+            <div class="flex flex-col items-center mr-[230px] w-[510px]">
+                <div class="-ml-14 space-y-5">
+                    <div class="flex w-full">
+                        <h2 class="flex text-2xl font-bold">
+                            “bika is delivering social impact in
+                            communities by communities.
+                        </h2>
+                    </div>
+
+                    <div class="flex w-full">
+                        <p class="text-lg">
+                            Moving around communities with bicycles delivering what
+                            people love to eat and drink, is socially impactful and
+                            definitely eco-friendly. We are uniquely empowering the youths
+                            in communities to serve their communities with their
+                            bicycles. Join bika today. Become a bika!
+                        </p>
+                    </div>
+
+                    <div class="flex">
+                        <button
+                            class="bg-transparent hover:bg-purple-600 text-purple-600 font-semibold hover:text-white py-2 px-6 border border-purple-500 hover:border-transparent rounded-lg">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class=" relative  px-6 pt-10 pb-32">
+        <div
+            class=" bg-white mt-40 mb-40 rounded-xl shadow py-32  px-8 h-fit w-[100%] flex flex-row  items-center justify-around">
+            <div class="flex flex-col">
+                <h2 class="font-bold text-2xl">
+                    Download bika app <br>
+                    by firansefood!
+                </h2>
+                <p class=" mt-10">Sign-up and get lit with your bicycle on bika <br>
+                    serving your community and get paid. You can <br>
+                    also put up your bicycle for rent.
+                </p>
+            </div>
+
+            <div class="flex flex-col space-y-9">
+                <button>
+                    <img src="/img/p apple 2.png" alt="">
+                </button>
+
+                <button>
+                    <img src="/img/p google 2.png" alt="">
+                </button>
+            </div>
+
+            <div class="absolute right-0 top-0 -z-20">
+                <img src="/img/carton bika 1.png" alt="">
+            </div>
+
+            <div class="absolute left-0 bottom-0 z-10">
+                <img src="/img/bikaHelmet.png" alt="">
+            </div>
+    </section>
+
+    <footer class=" w-full h-[80vh] flex items-center justify-center">
+        <div class=" w-full bg-white mt-40 mb-0 h-[55vh] flex items-center justify-center flex-col">
+            <p class="text-[#ADADAD] text-2xl mt-10 font-bold">© bika, 2022.</p>
+            <p class="text-left text-[#ADADAD] mt-10">
+                bika is a bicycle hailing app for food, drinks, <br>
+                fruits and groceries delivery in communities <br>
+                by people of the community.
+            </p>
+            <p class="text-[#ADADAD] mt-10">a product of FiranṣẹFood</p>
+            <div class="w-[300px] flex px-10 items-center justify-around  mt-10 mb-10">
+                <i class="fa-brands fa-instagram text-[#ADADAD] text-2xl"></i>
+                <i class="fa-brands fa-linkedin text-[#ADADAD] text-2xl"></i>
+                <i class="fa-brands fa-facebook text-[#ADADAD] text-2xl"></i>
+                <i class="fa-brands fa-twitter text-[#ADADAD] text-2xl"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const textElement = document.getElementById("textElement");
+        const texts = ["firanṣẹFood", "Groceries", "Chops", "Drinks", "Lunch"];
+        let currentTextIndex = 0;
+        let currentCharacterIndex = 0;
+        let typingDelay = 180; // Adjust this value to control typing speed
+        let erasingDelay = 80; // Adjust this value to control erasing speed
+        let isTyping = true;
+
+        function changeText() {
+            const currentText = texts[currentTextIndex];
+
+            if (isTyping) {
+                textElement.textContent = currentText.substring(0, currentCharacterIndex + 1);
+                currentCharacterIndex++;
+
+                if (currentCharacterIndex === currentText.length) {
+                    isTyping = false;
+                    setTimeout(changeText, 2000); // Delay before erasing
+                } else {
+                    setTimeout(changeText, typingDelay);
+                }
+            } else {
+                textElement.textContent = currentText.substring(0, currentCharacterIndex);
+                currentCharacterIndex--;
+
+                if (currentCharacterIndex === -1) {
+                    isTyping = true;
+                    currentTextIndex = (currentTextIndex + 1) % texts.length;
+                }
+
+                setTimeout(changeText, erasingDelay);
+            }
+        }
+
+        changeText();
+
+
+        const btn = document.querySelector('button.hamburger');
+        const menu = document.querySelector(".menu");
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        })
+
+    </script>
+
+    <style>
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .animate-bounce {
+            animation-name: bounce;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+    </style>
 </body>
 
 </html>
